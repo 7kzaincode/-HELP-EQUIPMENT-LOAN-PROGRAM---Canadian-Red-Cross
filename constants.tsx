@@ -42,7 +42,7 @@ export const EQUIPMENT_DATA: Equipment[] = [
     name: { en: 'Cane', fr: 'Canne' },
     description: { en: 'Single-point support for minor balance issues.', fr: 'Support à un point pour les légers problèmes d’équilibre.' },
     imageUrl: 'https://picsum.photos/seed/cane/400/300',
-    pdfUrl: 'assets/pdfs/Instructions-for-care-and-use-of-a-cane.pdf',
+    pdfUrl: '/assets/pdfs/cane.pdf',
     maxWeightLbs: 250,
     sizingGuide: { en: 'Adjust handle to the crease of the patient\'s wrist.', fr: 'Ajustez la poignée au pli du poignet du patient.' }
   },
@@ -52,7 +52,7 @@ export const EQUIPMENT_DATA: Equipment[] = [
     name: { en: 'Crutches (Axilla)', fr: 'Béquilles axillaires' },
     description: { en: 'Underarm support for non-weight bearing injury.', fr: 'Soutien sous-axillaire pour blessures sans mise en charge.' },
     imageUrl: 'https://picsum.photos/seed/crutches/400/300',
-    pdfUrl: 'assets/pdfs/Instructions-for-care-and-use-of-crutches-(axilla).pdf',
+    pdfUrl: '/assets/pdfs/crutches-axilla.pdf',
     maxWeightLbs: 300,
     sizingGuide: { en: 'Leave 2-3 inches space between armpit and top pad.', fr: 'Laissez 2-3 pouces entre l’aisselle et le coussin.' }
   },
@@ -62,7 +62,7 @@ export const EQUIPMENT_DATA: Equipment[] = [
     name: { en: 'Forearm Crutches', fr: 'Béquilles de coude' },
     description: { en: 'Forearm support for long-term mobility needs.', fr: 'Soutien de l’avant-bras pour besoins de mobilité prolongés.' },
     imageUrl: 'https://picsum.photos/seed/forearm/400/300',
-    pdfUrl: 'assets/pdfs/Instructions-for-care-and-use-of-forearm-crutches.pdf',
+    pdfUrl: '/assets/pdfs/forearm-crutches.pdf',
     maxWeightLbs: 300,
     sizingGuide: { en: 'Arm cuffs should sit 1-2 inches below the elbow.', fr: 'Les brassards doivent être 1-2 pouces sous le coude.' }
   },
@@ -72,7 +72,7 @@ export const EQUIPMENT_DATA: Equipment[] = [
     name: { en: 'Walker', fr: 'Déambulateur' },
     description: { en: 'Standard folding walker for maximum stability.', fr: 'Cadre de marche pliant standard.' },
     imageUrl: 'https://picsum.photos/seed/walker/400/300',
-    pdfUrl: 'assets/pdfs/Instructions-for-care-and-use-of-a-walker.pdf',
+    pdfUrl: '/assets/pdfs/walker.pdf',
     maxWeightLbs: 300,
     sizingGuide: { en: 'Hand grips should be level with the wrists.', fr: 'Poignées au niveau des poignets.' }
   },
@@ -82,7 +82,7 @@ export const EQUIPMENT_DATA: Equipment[] = [
     name: { en: 'Rollator (4-Wheeled Walker)', fr: 'Rollator à 4 roues' },
     description: { en: 'Includes wheels, brakes, and a seat for resting.', fr: 'Comprend roues, freins et un siège pour le repos.' },
     imageUrl: 'https://picsum.photos/seed/rollator/400/300',
-    pdfUrl: 'assets/pdfs/Instructions-for-care-and-use-of-a-4-wheeled-walker-(rollator).pdf',
+    pdfUrl: '/assets/pdfs/rollator.pdf',
     maxWeightLbs: 300,
     sizingGuide: { en: 'Lock brakes completely before sitting down.', fr: 'Verrouillez les freins avant de vous asseoir.' }
   },
@@ -92,7 +92,7 @@ export const EQUIPMENT_DATA: Equipment[] = [
     name: { en: 'Wheelchair', fr: 'Fauteuil roulant' },
     description: { en: 'Manual transit wheelchair with footrests.', fr: 'Fauteuil roulant manuel avec repose-pieds.' },
     imageUrl: 'https://picsum.photos/seed/wheelchair/400/300',
-    pdfUrl: 'assets/pdfs/Instructions-for-care-and-use-of-a-wheelchair.pdf',
+    pdfUrl: '/assets/pdfs/wheelchair.pdf',
     maxWeightLbs: 250,
     sizingGuide: { en: 'Ensure the patient’s hips fit comfortably within the seat.', fr: 'Hanches confortables dans le siège.' }
   },
@@ -104,7 +104,7 @@ export const EQUIPMENT_DATA: Equipment[] = [
     name: { en: 'Bath Board', fr: 'Planche de bain' },
     description: { en: 'Secure seat that rests across the top of the tub.', fr: 'Siège sécurisé reposant sur le dessus de la baignoire.' },
     imageUrl: 'https://picsum.photos/seed/bathboard/400/300',
-    pdfUrl: 'assets/pdfs/Instructions-for-care-and-use-of-a-bath-board.pdf',
+    pdfUrl: '/assets/pdfs/bath-board.pdf',
     maxWeightLbs: 250,
     sizingGuide: { en: 'Ensure the board is locked onto both tub edges.', fr: 'Planche verrouillée sur les deux bords.' }
   },
@@ -114,7 +114,7 @@ export const EQUIPMENT_DATA: Equipment[] = [
     name: { en: 'Bath Transfer Bench', fr: 'Banc de transfert de bain' },
     description: { en: 'Helps users transition into the tub while seated.', fr: 'Aide à entrer dans le bain en position assise.' },
     imageUrl: 'https://picsum.photos/seed/bench/400/300',
-    pdfUrl: 'assets/pdfs/Instructions-for-care-and-use-of-a-bath-transfer-bench-(tub-transfer-seat).pdf',
+    pdfUrl: '/assets/pdfs/bath-transfer-bench.pdf',
     maxWeightLbs: 300,
     sizingGuide: { en: 'Adjust legs so the bench is level and stable.', fr: 'Ajustez les pieds pour la stabilité.' }
   },
@@ -124,7 +124,7 @@ export const EQUIPMENT_DATA: Equipment[] = [
     name: { en: 'Bath Shower Chair', fr: 'Chaise de douche' },
     description: { en: 'Portable stool for use inside the tub or shower.', fr: 'Tabouret portable pour douche ou bain.' },
     imageUrl: 'https://picsum.photos/seed/stool/400/300',
-    pdfUrl: 'assets/pdfs/Instructions-for-care-and-use-of-a-bath-shower-chair-(bath-stool).pdf',
+    pdfUrl: '/assets/pdfs/bath-shower-chair.pdf',
     maxWeightLbs: 300,
     sizingGuide: { en: 'Check that all rubber feet are in good condition.', fr: 'Vérifiez les embouts en caoutchouc.' }
   },
@@ -134,7 +134,7 @@ export const EQUIPMENT_DATA: Equipment[] = [
     name: { en: 'Bath Tub Grab Bar', fr: 'Barre d’appui de baignoire' },
     description: { en: 'Mounts to the tub wall for extra balance.', fr: 'Se monte sur le mur de la baignoire.' },
     imageUrl: 'https://picsum.photos/seed/grab/400/300',
-    pdfUrl: 'assets/pdfs/Instructions-for-care-and-use-of-a-bath-tub-grab-bar-(tub-grip).pdf',
+    pdfUrl: '/assets/pdfs/bath-tub-grab-bar.pdf',
     maxWeightLbs: 250,
     sizingGuide: { en: 'Not intended to support full body weight.', fr: 'Ne supporte pas tout le poids du corps.' }
   },
@@ -144,7 +144,7 @@ export const EQUIPMENT_DATA: Equipment[] = [
     name: { en: 'Raised Toilet Seat', fr: 'Siège de toilette surélevé' },
     description: { en: 'Reduces the distance needed to sit or stand.', fr: 'Réduit la distance pour s’asseoir ou se lever.' },
     imageUrl: 'https://picsum.photos/seed/raised/400/300',
-    pdfUrl: 'assets/pdfs/Instructions-for-care-and-use-of-a-raised-toilet-seat.pdf',
+    pdfUrl: '/assets/pdfs/raised-toilet-seat.pdf',
     maxWeightLbs: 350,
     sizingGuide: { en: 'Ensure the locking knob is tightened securely.', fr: 'Serrez bien le bouton de verrouillage.' }
   },
@@ -154,7 +154,7 @@ export const EQUIPMENT_DATA: Equipment[] = [
     name: { en: 'Toilet Safety Frame', fr: 'Cadre de sécurité de toilette' },
     description: { en: 'Side handles for stability when using the toilet.', fr: 'Poignées latérales pour la stabilité.' },
     imageUrl: 'https://picsum.photos/seed/frame/400/300',
-    pdfUrl: 'assets/pdfs/Instructions-for-care-and-use-of-a-toilet-safety-frame-(versa-frame).pdf',
+    pdfUrl: '/assets/pdfs/toilet-safety-frame.pdf',
     maxWeightLbs: 250,
     sizingGuide: { en: 'Mounts directly to the toilet seat bolts.', fr: 'Se fixe aux boulons du siège.' }
   },
@@ -164,7 +164,7 @@ export const EQUIPMENT_DATA: Equipment[] = [
     name: { en: 'Toilet Seat Elevator', fr: 'Élévateur de siège de toilette' },
     description: { en: 'Permanent-style riser for elongated toilets.', fr: 'Surélévateur permanent pour toilettes allongées.' },
     imageUrl: 'https://picsum.photos/seed/elevator/400/300',
-    pdfUrl: 'assets/pdfs/Instructions-for-care-and-use-of-a-toilet-seat-elevator-elongated.pdf',
+    pdfUrl: '/assets/pdfs/toilet-seat-elevator.pdf',
     maxWeightLbs: 300,
     sizingGuide: { en: 'Fits between the toilet bowl and existing seat.', fr: 'S’installe sous le siège existant.' }
   },
@@ -176,7 +176,7 @@ export const EQUIPMENT_DATA: Equipment[] = [
     name: { en: 'Bed Assist Handle', fr: 'Barre d’appui de lit' },
     description: { en: 'Sturdy handle for getting in and out of bed.', fr: 'Poignée robuste pour entrer/sortir du lit.' },
     imageUrl: 'https://picsum.photos/seed/bed/400/300',
-    pdfUrl: 'assets/pdfs/Instructions-for-care-and-use-of-a-bed-assist-(bed-handle).pdf',
+    pdfUrl: '/assets/pdfs/bed-assist.pdf',
     maxWeightLbs: 250,
     sizingGuide: { en: 'Secure safety strap to the opposite bed frame.', fr: 'Fixez la sangle au cadre de lit opposé.' }
   },
@@ -186,7 +186,7 @@ export const EQUIPMENT_DATA: Equipment[] = [
     name: { en: 'Bed Cradle', fr: 'Arceau de lit' },
     description: { en: 'Metal frame to keep linens off the feet.', fr: 'Cadre métallique pour les draps.' },
     imageUrl: 'https://picsum.photos/seed/cradle/400/300',
-    pdfUrl: 'assets/pdfs/Instructions-for-care-and-use-of-a-bed-cradle.pdf',
+    pdfUrl: '/assets/pdfs/bed-cradle.pdf',
     maxWeightLbs: 100,
     sizingGuide: { en: 'Slides under the mattress for stability.', fr: 'Se glisse sous le matelas.' }
   },
@@ -196,7 +196,7 @@ export const EQUIPMENT_DATA: Equipment[] = [
     name: { en: 'Commode', fr: 'Commode' },
     description: { en: 'Portable toilet for use where access is limited.', fr: 'Toilettes portables pour accès limité.' },
     imageUrl: 'https://picsum.photos/seed/commode/400/300',
-    pdfUrl: 'assets/pdfs/Instructions-for-care-and-use-of-a-commode-(stationary-or-wheeled).pdf',
+    pdfUrl: '/assets/pdfs/commode.pdf',
     maxWeightLbs: 350,
     sizingGuide: { en: 'Bucket must be cleaned and disinfected daily.', fr: 'Seau à nettoyer quotidiennement.' }
   },
@@ -206,7 +206,7 @@ export const EQUIPMENT_DATA: Equipment[] = [
     name: { en: 'IV Pole', fr: 'Poteau de perfusion' },
     description: { en: 'Stand for intravenous bags and infusions.', fr: 'Support pour perfusions IV.' },
     imageUrl: 'https://picsum.photos/seed/iv/400/300',
-    pdfUrl: 'assets/pdfs/Instructions-for-care-and-use-of-an-IV-pole.pdf',
+    pdfUrl: '/assets/pdfs/iv-pole.pdf',
     maxWeightLbs: 50,
     sizingGuide: { en: 'Keep the base clear of tripping hazards.', fr: 'Évitez les risques de trébuchement.' }
   },
@@ -216,7 +216,7 @@ export const EQUIPMENT_DATA: Equipment[] = [
     name: { en: 'Foam Wheelchair Cushion', fr: 'Coussin en mousse pour fauteuil' },
     description: { en: 'Pressure reduction for seated comfort.', fr: 'Réduction de pression pour le confort assis.' },
     imageUrl: 'https://picsum.photos/seed/cushion/400/300',
-    pdfUrl: 'assets/pdfs/Instructions-for-care-and-use-of-a-foam-wheelchair-cushion.pdf',
+    pdfUrl: '/assets/pdfs/wheelchair-cushion.pdf',
     maxWeightLbs: 250,
     sizingGuide: { en: 'Place the zipper side at the rear of the seat.', fr: 'Fermeture éclair à l’arrière.' }
   }
