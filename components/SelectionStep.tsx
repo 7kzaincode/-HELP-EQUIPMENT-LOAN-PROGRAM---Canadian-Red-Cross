@@ -19,10 +19,10 @@ export const SelectionStep: React.FC<SelectionStepProps> = ({ selectedIds, onTog
   const renderSection = (titleKey: string, items: Equipment[]) => {
     if (items.length === 0) return null;
     return (
-      <div className="mb-12">
+      <section className="mb-12" aria-labelledby={`${titleKey}-heading`}>
         <div className="flex items-center space-x-4 mb-6">
-          <h3 className="text-xl font-black text-gray-900 uppercase tracking-widest">{t(titleKey)}</h3>
-          <div className="h-px flex-grow bg-gray-200"></div>
+          <h3 id={`${titleKey}-heading`} className="text-xl font-black text-gray-900 uppercase tracking-widest">{t(titleKey)}</h3>
+          <div className="h-px flex-grow bg-gray-200" aria-hidden="true"></div>
           <span className="text-sm font-bold text-gray-400">{items.length} items</span>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
@@ -30,6 +30,8 @@ export const SelectionStep: React.FC<SelectionStepProps> = ({ selectedIds, onTog
             <button
               key={item.id}
               onClick={() => onToggle(item.id)}
+              aria-pressed={selectedIds.includes(item.id)}
+              aria-label={`${selectedIds.includes(item.id) ? 'Deselect' : 'Select'} ${item.name[lang]}`}
               className={`relative flex flex-col items-center p-5 bg-white rounded-3xl shadow-sm border-2 transition-all duration-300 hover:shadow-xl group ${
                 selectedIds.includes(item.id) 
                   ? 'border-[#ed1b2e] ring-8 ring-red-50 -translate-y-1' 
@@ -38,7 +40,7 @@ export const SelectionStep: React.FC<SelectionStepProps> = ({ selectedIds, onTog
             >
               <div className={`w-16 h-16 md:w-20 md:h-20 mb-4 flex items-center justify-center rounded-2xl transition-all duration-300 ${
                 selectedIds.includes(item.id) ? 'bg-[#ed1b2e] text-white shadow-inner' : 'bg-gray-50 text-gray-300 group-hover:text-gray-400'
-              }`}>
+              }`} aria-hidden="true">
                 <CategoryIcon category={item.category} />
               </div>
               <h3 className={`text-xs md:text-sm font-black text-center leading-tight transition-colors ${
@@ -48,7 +50,7 @@ export const SelectionStep: React.FC<SelectionStepProps> = ({ selectedIds, onTog
               </h3>
               
               {selectedIds.includes(item.id) && (
-                <div className="absolute top-3 right-3 text-[#ed1b2e] bg-white rounded-full shadow-md p-0.5">
+                <div className="absolute top-3 right-3 text-[#ed1b2e] bg-white rounded-full shadow-md p-0.5" aria-hidden="true">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
@@ -57,7 +59,7 @@ export const SelectionStep: React.FC<SelectionStepProps> = ({ selectedIds, onTog
             </button>
           ))}
         </div>
-      </div>
+      </section>
     );
   };
 
@@ -71,10 +73,12 @@ export const SelectionStep: React.FC<SelectionStepProps> = ({ selectedIds, onTog
       </div>
 
       {/* Category Tabs */}
-      <div className="flex flex-wrap justify-center gap-2 mb-12">
+      <nav className="flex flex-wrap justify-center gap-2 mb-12" role="tablist" aria-label="Filter equipment by category">
         {categories.map((cat) => (
           <button
             key={cat}
+            role="tab"
+            aria-selected={activeCategory === cat}
             onClick={() => setActiveCategory(cat)}
             className={`px-6 py-3 rounded-2xl font-black text-xs uppercase tracking-widest transition-all ${
               activeCategory === cat 
@@ -85,7 +89,7 @@ export const SelectionStep: React.FC<SelectionStepProps> = ({ selectedIds, onTog
             {t(`cat_${cat}`)}
           </button>
         ))}
-      </div>
+      </nav>
 
       {/* Grouped Content */}
       <div className="pb-32">
