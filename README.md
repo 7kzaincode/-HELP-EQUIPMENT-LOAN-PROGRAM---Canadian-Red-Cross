@@ -156,4 +156,4 @@ These are especially important constraints for a health-related interface. Treat
 
 ## Acknowledgements
 
-The concept is inspired by the [Canadian Red Cross Health Equipment Loan Program](https://www.redcross.ca/how-we-help/community-health-services-in-canada/health-equipment-loan-program), which provides short-term loans of health equipment in participating communities. Canadian Red Cross names, marks, and program materials belong to their respective owners.
+The concept is inspired by the [Canadian Red Cross Health Equipment Loan Program](https://www.redcross.ca/how-we-help/community-health-services-in-canada/health-equipment-loan-program), which provides short-term loans of health equipment in participating communities. Canadian Red Cross names, marks, and program materials belong to their respective owners. Made for use by Canadian Red Cross Health Organization
