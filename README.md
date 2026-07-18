@@ -21,9 +21,6 @@ This project explores a simpler digital workflow for choosing loaned health equi
 
 The interface supports English and French, metric and imperial measurements, and 18 equipment types across mobility, bathroom, and bedroom categories.
 
-> [!IMPORTANT]
-> This is an independent educational prototype. It is not an official Canadian Red Cross application, is not affiliated with or endorsed by the Canadian Red Cross, and must not replace professional assessment, fitting, or medical advice. Equipment limits and sizing guidance must be verified against the actual device and a qualified healthcare professional.
-
 ## How it works
 
 1. **Choose equipment** from the complete catalogue or filter by category.
